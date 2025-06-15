@@ -1,12 +1,42 @@
-# React + Vite
+# 📊 Excel Data Visualization with React and Python
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates how to generate an Excel file using Python and visualize the data in a Pie Chart using React, Vite, and Chart.js.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+- `excel/generate_excel.py` → Python script to generate the Excel file
+- `public/excel/donnees_graphique.xlsx` → Generated Excel file used by the frontend
+- `src/ExcelPieChart.jsx` → React component that reads the Excel file and renders a pie chart
+- `src/App.jsx` → Main app file that displays the chart component
+- `vite.config.js`, `package.json`, `index.html` → Vite project configuration files
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧰 Technologies Used
+
+- Python (with `pandas`)
+- React + Vite
+- Chart.js & React-Chartjs-2
+- XLSX.js (for reading Excel files in JavaScript)
+
+---
+
+## ▶️ How it works
+
+1. A Python script generates an Excel file with some data.
+2. This file is placed in the `public/` folder so it can be loaded by the frontend.
+3. React reads the Excel file and uses Chart.js to display the data in a Pie Chart.
+
+---
+
+## ✅ Result
+
+A dynamic and interactive chart generated from Excel data using modern web technologies.
+
+---
+
+## 📜 License
+
+MIT
